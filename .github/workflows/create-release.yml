@@ -8,6 +8,12 @@ on:
     tags:
       - "v*"
 jobs:
+  get_changelog:
+    id: changelog
+    uses: jaywcjlove/changelog-generator@main
+    with:
+      token: ${{ secrets.GITHUB_TOKEN }}
+
   release_version:
     runs-on: ubuntu-latest
     steps:
@@ -21,5 +27,8 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: ${{ github.ref }}
+          body: |
+            ${{ steps.changelog.outputs.compareurl }}
+            ${{ steps.changelog.outputs.changelog }}
           draft: false
           prerelease: false
