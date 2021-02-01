@@ -1,3 +1,12 @@
+# [0.1.0](https://github.com/aversini/testing-github-actions/compare/v0.0.8...v0.1.0) (2021-02-01)
+
+
+### Features
+
+* trying with generated changelog ([1a5265a](https://github.com/aversini/testing-github-actions/commit/1a5265a39345ef81dc66697e994fec0a4561faaf))
+
+
+
 ## [0.0.8](https://github.com/aversini/testing-github-actions/compare/v0.0.7...v0.0.8) (2021-02-01)
 
 
