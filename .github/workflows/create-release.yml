@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Generate GitHub Release
-        uses: yashanand1910/standard-release-notes@latest
+        uses: yashanand1910/standard-release-notes@v1.2.1
         with:
           changelog_path: ./CHANGELOG.md
           version: ${{ github.ref }}
