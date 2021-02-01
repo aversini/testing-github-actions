@@ -19,3 +19,4 @@ jobs:
           title: "v$tag"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FILENAME: "CHANGELOG.md"
