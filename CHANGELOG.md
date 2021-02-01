@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/aversini/testing-github-actions/compare/v0.1.1...v0.1.2) (2021-02-01)
+
+
+### Bug Fixes
+
+* still tryin' ([9245edc](https://github.com/aversini/testing-github-actions/commit/9245edc2c08e3f9ccd8159a96081d72398d42923))
+
+
+
 ## [0.1.1](https://github.com/aversini/testing-github-actions/compare/v0.1.0...v0.1.1) (2021-02-01)
 
 
