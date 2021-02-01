@@ -13,9 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Generate GitHub Release
-        uses: yashanand1910/standard-release-notes@v1.2.1
+        uses: Roang-zero1/github-create-release-action@master
         with:
-          changelog_path: ./CHANGELOG.md
-          version: ${{ github.ref }}
+          created_tag: ${GITHUB_REF#refs/*/}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
