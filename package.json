@@ -13,7 +13,8 @@
     "bump": "bump-and-release -t bump",
     "changelog": "conventional-changelog -i CHANGELOG.md -s -p angular",
     "release": "bump-and-release -t release",
-    "test": "echo 'all good man'"
+    "test": "echo 'all good man'",
+    "test:coverage": "echo 'all good man'"
   },
   "devDependencies": {
     "bump-and-release": "1.2.0",
