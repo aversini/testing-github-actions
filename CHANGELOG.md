@@ -1,3 +1,12 @@
+## [0.0.5](https://github.com/aversini/testing-github-actions/compare/v0.0.4...v0.0.5) (2021-02-01)
+
+
+### Bug Fixes
+
+* this is not an easy journey ([12a0332](https://github.com/aversini/testing-github-actions/commit/12a03327df97aaae2798765d1d7e9169a6fa141d))
+
+
+
 ## [0.0.4](https://github.com/aversini/testing-github-actions/compare/v0.0.3...v0.0.4) (2021-02-01)
 
 
