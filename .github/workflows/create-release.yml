@@ -8,13 +8,15 @@ on:
     tags:
       - "v*"
 jobs:
-  get_changelog:
-    id: changelog
-    uses: jaywcjlove/changelog-generator@main
-    with:
-      token: ${{ secrets.GITHUB_TOKEN }}
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: jaywcjlove/changelog-generator@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   release_version:
+    needs: changelog
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
