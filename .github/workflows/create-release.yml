@@ -15,6 +15,6 @@ jobs:
       - name: Generate GitHub Release
         uses: Roang-zero1/github-create-release-action@master
         with:
-          created_tag: ${GITHUB_REF#refs/*/}
+          created_tag: ${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
