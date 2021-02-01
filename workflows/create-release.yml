@@ -1,0 +1,21 @@
+# See documentation for this workflow here:
+# https://github.com/lsegal/github-release-from-changelog-action
+
+name: "Create Release"
+
+on:
+  push:
+    tags:
+      - "v*"
+jobs:
+  release_version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Generate GitHub Release
+        uses: lsegal/github-release-from-changelog-action@latest
+        with:
+          filename: "CHANGELOG.md"
+          title: "v$tag"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

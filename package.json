@@ -1,0 +1,22 @@
+{
+  "name": "testing-github-actions",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Arno Versini",
+  "description": "Trying dem out",
+  "homepage": "https://github.com/aversini/testing-github-actions",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aversini/testing-github-actions.git"
+  },
+  "scripts": {
+    "bump": "bump-and-release -t bump",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -p angular",
+    "release": "bump-and-release -t release",
+    "test": "echo 'all good man'"
+  },
+  "devDependencies": {
+    "bump-and-release": "1.2.0",
+    "conventional-changelog-cli": "^2.1.1"
+  }
+}
