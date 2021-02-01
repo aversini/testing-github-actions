@@ -1,3 +1,12 @@
+## [0.1.1](https://github.com/aversini/testing-github-actions/compare/v0.1.0...v0.1.1) (2021-02-01)
+
+
+### Bug Fixes
+
+* FFS ([0cde579](https://github.com/aversini/testing-github-actions/commit/0cde579ddae3f7855bbf7bd0ed86224d2523c2aa))
+
+
+
 # [0.1.0](https://github.com/aversini/testing-github-actions/compare/v0.0.8...v0.1.0) (2021-02-01)
 
 
