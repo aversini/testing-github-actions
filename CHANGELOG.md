@@ -1,3 +1,12 @@
+## [0.0.8](https://github.com/aversini/testing-github-actions/compare/v0.0.7...v0.0.8) (2021-02-01)
+
+
+### Bug Fixes
+
+* c'est pas simple... ([685550b](https://github.com/aversini/testing-github-actions/commit/685550b4059d0d16d27dc4622962bf37ccd2da27))
+
+
+
 ## [0.0.7](https://github.com/aversini/testing-github-actions/compare/v0.0.6...v0.0.7) (2021-02-01)
 
 
