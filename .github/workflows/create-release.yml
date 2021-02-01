@@ -8,19 +8,7 @@ on:
     tags:
       - "v*"
 jobs:
-  changelog:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Extract changelog for tag
-        id: changelog
-        uses: yashanand1910/standard-release-notes@v1.2.1
-        with:
-          version: ${{ github.ref }} # Required
-
   release_version:
-    needs: changelog
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -33,8 +21,6 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: ${{ github.ref }}
-          body: |
-            ${{ steps.changelog.outputs.compareurl }}
-            ${{ steps.changelog.outputs.changelog }}
+          body_path: ./RELEASE.md
           draft: false
           prerelease: false
