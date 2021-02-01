@@ -13,10 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Generate GitHub Release
-        uses: lsegal/github-release-from-changelog-action@latest
+        uses: yashanand1910/standard-release-notes@latest
         with:
-          filename: "CHANGELOG.md"
-          title: "v$tag"
+          changelog_path: ./CHANGELOG.md
+          version: ${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FILENAME: "CHANGELOG.md"
