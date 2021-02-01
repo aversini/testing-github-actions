@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/aversini/testing-github-actions/compare/v0.1.2...v0.2.0) (2021-02-01)
+
+
+### Features
+
+* OMG ([2368bb7](https://github.com/aversini/testing-github-actions/commit/2368bb7fa1f86d32de9aa147fd7d0c85010c839b))
+
+
+
 ## [0.1.2](https://github.com/aversini/testing-github-actions/compare/v0.1.1...v0.1.2) (2021-02-01)
 
 
