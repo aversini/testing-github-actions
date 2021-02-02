@@ -11,7 +11,7 @@
   },
   "scripts": {
     "bump": "bump-and-release -t bump",
-    "changelog": "conventional-changelog -i CHANGELOG.md -s -p angular && rimraf RELEASE.md && conventional-changelog -o RELEASE.md -n \"./configuration/release/config.js\"",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -p angular && rimraf LATEST.md && conventional-changelog -o LATEST.md -n \"./configuration/release/config.js\"",
     "release": "bump-and-release -t release",
     "test": "echo 'all good man'",
     "test:coverage": "echo 'all good man'"

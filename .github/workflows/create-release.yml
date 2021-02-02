@@ -1,3 +1,19 @@
+# This action will create a GitHub release as soon as a
+# tag that starts with "v" is created. It will read the
+# content of the file LATEST.md and append it to the
+# release notes. This file is re-created each time a new
+# release is done:
+#
+# npm run release
+#   -> npm run changelog
+#   -> delete LATEST.md
+#   -> create LATEST.md from previous tag to current tag
+#
+# See configuration/latest for more information.
+#
+# Once the GitHub release has been created, the package will
+# be published to npm.
+#
 name: "Create Release"
 
 on:
@@ -10,6 +26,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        uses: actions/setup-node@v1
+          with:
+          node-version: 12
+        run: npm test
       - name: Create Release
         id: create_release
         uses: actions/create-release@latest
@@ -18,6 +38,19 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: ${{ github.ref }}
-          body_path: ./RELEASE.md
+          body_path: ./LATEST.md
           draft: false
           prerelease: false
+
+  publish-npm:
+    needs: release_version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_publish_token}}
