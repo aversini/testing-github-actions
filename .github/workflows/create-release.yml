@@ -26,6 +26,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Setup Node 12
         uses: actions/setup-node@v1
         with:
           node-version: 12
