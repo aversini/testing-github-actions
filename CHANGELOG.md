@@ -1,3 +1,12 @@
+## [0.3.5](https://github.com/aversini/testing-github-actions/compare/v0.3.4...v0.3.5) (2021-02-02)
+
+
+### Bug Fixes
+
+* moar YML fun ([315f2fa](https://github.com/aversini/testing-github-actions/commit/315f2fa963bb3cd5d217f5ee9451054a4085bec1))
+
+
+
 ## [0.3.4](https://github.com/aversini/testing-github-actions/compare/v0.3.0...v0.3.4) (2021-02-02)
 
 
